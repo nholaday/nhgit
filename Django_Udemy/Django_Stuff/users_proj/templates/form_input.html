@@ -1,0 +1,11 @@
+{% extends "baselayer.html" %}
+{% block body_block %}
+<div class="jumbotron">
+    <form class="form-group" action="index.html" method="POST">
+        {{ userform.as_p }}
+        {{ upiform.as_p }}
+        {% csrf_token %}
+        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

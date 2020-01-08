@@ -1,0 +1,20 @@
+body{
+  background: url(https://www-tc.pbs.org/wgbh/nova/next/wp-content/uploads/2017/06/quantum-entanglement_2048x1152-1600x900.jpg);
+  background-repeat:repeat;
+}
+
+div{
+  background: yellow;
+  border: blue;
+  border-width: 10px;
+  border-style: dotted;
+}
+
+p{
+  color: green;
+}
+
+span{
+  background: red;
+  color: black;
+}

@@ -1,0 +1,20 @@
+h1{
+    font-family: "Arial";
+}
+
+body{
+    font-size: 16px;
+}
+
+/* em is a multiplier of default font size */
+p{
+    font-family: 'Bowlby One SC';
+    font-size: 1.5em;
+}
+
+#two{
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>List of Users</title>
+    </head>
+    <body>
+        <p>Here's a list of the users</p>
+        {% for user in UserInject %}
+        <ul>
+            <li>{{ user }}</li>
+            <li>{{ user.email }}</li>
+        </ul>
+        {% endfor %}
+    </body>
+</html>

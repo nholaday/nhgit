@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block body_block %}
+<div class="jumbotron">
+    <h2>Who is your Favorite Player</h2>
+    <form action="{% url 'usersapp:thank_you' %}" method="POST">
+        <div class="form-group">
+            {{ form.as_p }}
+            {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+    </form>
+</div>
+{% endblock %}

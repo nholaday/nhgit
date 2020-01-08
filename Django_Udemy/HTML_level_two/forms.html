@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <p>Enter your email and password:</p>
+      <input type="email" name="useremail" value="">
+      <input type="password" name="userpassword" value="">
+      <input type="submit" name="" value="Submit">
+    </form>
+    
+    <!-- Different kinds of inputs -->
+    <form>
+      <p>Pick a color!</p>
+      <input type="color" name="" value="">
+      <input type="text" name="" value="What a color!">
+    </form>
+    
+    <p>Here we actually associate labels with fields</p>
+    <!--form action will send you to another page-->
+    <form action="https://sf.vods.co/melee" method="get">
+      <label for="userinput">Enter some text:</label>
+      
+      <input id="userinput" type="text" name="fieldname" value="">
+      <input type="submit" name="" value="Submit">
+      <!--Because the input has a name it it acts as a variable that is set with the value of the input.  This can be seen in the address after Submitting-->
+    </form>
+    
+    <!--placeholder is basically a better parameter than value-->
+    <form>
+      <input type="text" name="" placeholder="Enter Required text" required>
+      <input type="text" name="" placeholder="Not Required">
+      <input type="submit" name="" value="Submit">
+    </form>
+  </body>
+</html>

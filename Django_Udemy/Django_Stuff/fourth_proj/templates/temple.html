@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Luna HTML Page</title>
+        <link rel="stylesheet" href="{% static "style.css" %}">
+    </head>
+    <body>
+        <h1>The Luna HTML Page!</h1>
+        <p>The temple</p>
+        <div class="">
+            {{ injected_text }}
+        </div>
+        <img src="{% static "IMG_1778.jpg" %}" alt="">
+        
+    </body>
+</html>

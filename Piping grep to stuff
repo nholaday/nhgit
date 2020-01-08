@@ -1,0 +1,9 @@
+Piping grep to other stuff
+
+grep "ERROR read" bacnet.log | cut -d " " -f5 | sort | uniq | wc -l
+
+1. Find all lines with "ERROR read" in them
+2. Using a space " " as a delimiter (-d), cut out everything but the 5th field (-f5)
+3. Sort the items
+4. Find only unique items (must sort first)
+5. wc = word count, -l = line count.  How many items are in that list

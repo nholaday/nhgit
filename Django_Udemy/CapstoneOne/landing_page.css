@@ -1,0 +1,32 @@
+body{ 
+    font-family: 'ArchivoNarrowRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+    color: white;
+    background-color: #262759;
+    text-align: center;
+    border: 40px #7ca6ea solid;
+    border-top: 0px;
+    margin: 0px;
+    padding-bottom: 50px;
+}
+
+p{
+    width: 60%;
+    margin: 4em auto 1em auto;
+}
+.launchhead{
+    font-style: bold;
+}
+
+form{
+    font-size: 1.2em;
+}
+
+#submit{
+    width: 10em;
+    height: 5em;
+    background-color: orange;
+    border-radius: 5px;
+    margin: 10px;
+}

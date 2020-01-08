@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nic's HTML Lvl 2 assessment</title>
+  </head>
+  <body>
+    <h1>Course Sign Up Page</h1>
+    <p>Please Note: First Name, Last Name, Password, and Email are required</p>
+
+    <form action="thankyou.html" method="get">
+        <label for="fn">First Name:</label>
+        <input id="fn" type="text" placeholder="First Name" required>
+        <label for="ln">Last Name:</label>
+        <input id="ln" type="text" placeholder="Last Name" required>
+
+        <p></p>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="name@email.com" required>
+        <label for="pass">Password:</label>
+        <input id="pass" type="text" required>
+
+        <p>Are you over the age of 18?</p>
+        <label for="yes">Yes:<label>
+        <input id="yes" type="radio" name="Over18">
+        <label for="no">No:<label>
+        <input id="yes" type="radio" name="Over18">
+
+        <p>Do you have a Credit Card or PayPal?</p>
+        <select name="payment:">
+            <option name="cc">Credit Card</option>
+            <option name="pp">PayPal</option>
+        </select>
+
+        <p></p>
+        <input type="submit" value="Submit Feedback">
+    </form>
+  </body>
+</html>

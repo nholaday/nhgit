@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>This page has a Form</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-5">Here is a form</h1>
+            <form class="" action="index.html" method="post">
+                {{ form.as_p }}
+                {% csrf_token %}
+                <input type="submit" class="btn btn-primary" value="Submit buttoon">
+            </form>
+        </div>
+        <br>
+        <div class="container bg-light">
+            <h1>Here's the results</h1>
+            {% for p in persons %}
+                <ul>
+                    <li>{{ p.name }}</li>
+                    <li>{{ p.email }}</li>
+                    <li>{{ p.text }}</li>
+                </ul>
+            {% endfor %}
+        </div>
+        
+    </body>
+</html>

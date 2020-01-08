@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends "baselayer.html" %}
+{% load staticfiles %}
+{% block body_block %}
+    <div class="jumbotron">
+        <h1>Here's the index</h1>
+        <h2>{{ inject_key }}</h2>
+    </div>
+    <img src="{% static 'IMG_1985.JPG' %}" width=500 alt="">
+{% endblock %}

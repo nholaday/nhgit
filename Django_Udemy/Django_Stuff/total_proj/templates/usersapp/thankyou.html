@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body_block %}
+    <div class="jumbotron">
+        <h2>Thank you for your submission!</h2>
+        <p class="hero">Here is a list of the submissions so far:</p>
+    </div>
+    <div class="container">
+        <ul>
+        {% for fp in fps %}
+            <li>{{ fp.player_name }} -- {{ fp.reason }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,28 @@
+/* Classes start with a . */
+.firstDiv{
+  color: red;
+}
+
+.secDiv{
+  color: green;
+}
+/* id's start with # */
+#singledout{
+  color:orange;
+  text-decoration: overline;
+}
+
+/* Use selectors like '+' if you want to target things next to something */
+h3 + ol{
+  border: 4px dotted purple;
+}
+
+/* all anchor tags inside a list */
+li a{
+  color: red;
+}
+
+/* anchor tags with a specific destination */
+li a[href="sf.vods.co/melee"]{
+  border: 5px solid orange;
+}

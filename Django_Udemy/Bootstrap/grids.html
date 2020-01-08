@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- Bootstrap separates the screen into 12 columns which can be displayed in any way over different shaped screens
+class="row"
+Rows work like this : column-Screensize-NumberofColumns
+At breakpoints in screensize the page will display differently -->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <title></title>
+    </head>
+    <!-- Add a CSS style to see different columns -->
+    <style>
+        .boxy{
+            background: #b3ddff;
+            border: 2px solid black;
+        }
+    </style>
+    <body>
+        <!-- Have 4-4-4 for Large screens or larger -->
+        <div class="container" style="width: 600px">
+            <div class="row">
+                <div class="col-lg-4 boxy">
+                    COL large 4
+                </div>
+                <div class="col-lg-4 boxy">
+                    COL large 4
+                </div>
+                <div class="col-lg-4 boxy">
+                    COL large 4
+                </div>
+            </div>
+        </div>
+        <!-- Have 6-6 for Medium screens or larger -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 boxy">
+                    COL med 6
+                </div>
+                <div class="col-md-6 boxy">
+                    COL med 6
+                </div>
+            </div>
+        </div>
+        <!-- Have 6-6 for extra small screens or larger (all screens) -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6 boxy">
+                    COL extra small 6
+                </div>
+                <div class="col-6 boxy">
+                    COL extra small 6
+                </div>
+            </div>
+        </div>
+        <!-- For large screen be 3 columns, for medium be 6 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 boxy"> One</div>
+                <div class="col-lg-3 col-md-6 boxy"> Two</div>
+                <div class="col-lg-3 col-md-6 boxy"> Three</div>
+                <div class="col-lg-3 col-md-6 boxy"> Four</div>
+            </div>
+        </div>
+        
+    </body>
+</html>

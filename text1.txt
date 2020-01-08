@@ -1,0 +1,1 @@
+Deleting whatever is in text1.txt and Writing this line to file

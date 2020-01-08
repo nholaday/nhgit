@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends "blogapp/base.html" %}
+    {% block body_block %}
+        <h1>Relative URL Template</h1>
+        <p><a href="{% url "blogapp:media" %}">Media Page</a></p>
+        <p><a href="{% url "blogapp:blog index" %}">Back to Blog Index</a></p>
+        <p><a href="{% url "admin:index" %}">Special link to admin page</a></p>
+        <p><a href="{% url "index" %}">Special link to index page</a></p>
+    {% endblock %}
+
+<!-- Old way
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Relative URL Template</h1>
+        <p><a href="{% url "blogapp:media" %}">Media Page</a></p>
+        <p><a href="{% url "blogapp:blog index" %}">Back to Blog Index</a></p>
+        <p><a href="{% url "admin:index" %}">Special link to admin page</a></p>
+        <p><a href="{% url "index" %}">Special link to index page</a></p>
+    </body>
+</html> -->

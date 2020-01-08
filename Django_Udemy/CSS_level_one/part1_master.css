@@ -1,0 +1,22 @@
+/* Basic css format
+htmltag{
+  property: value;
+} */
+
+h1{
+  color: orange;
+}
+
+li{
+  /* use a colorpicker to give exact color values */
+  color: #b50adb;
+}
+
+p{
+  color: rgb(137, 211, 112)
+}
+
+h4{
+  /* 'a' in rgba stands for alpha and defines transparency */
+  color: rgba(137, 211, 112, 0.5)
+}

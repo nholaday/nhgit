@@ -1,0 +1,32 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+
+td{
+    height: 162px;
+    width: 100px;
+    border: 10px white solid;
+}
+
+#cel1{
+    background-color: rgb(209,255,255);
+}
+#cel2{
+    background-color: rgb(255,255,209);
+}
+#cel3{
+    background-color: rgb(209,255,209);
+}
+#cel4{
+    background-color: rgb(255,209,209);
+}
+#cel5{
+    background-color: rgb(209,209,255);
+}
