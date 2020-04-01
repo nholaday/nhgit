@@ -18,6 +18,10 @@ print dic.get(8,"8 is Not found!")
 # to get just the values use .values() and keys .keys()
 print "just values: {}".format(dic.values())
 print "just keys: {}".format(dic.keys())
+# use update() to add multiple pairs
+dic.update({12:"stuff", 24:"koala"})
+# Removing a key
+dic.pop(7)
 
 # Tuples - immutable, lists that cannot be changed
 wordtuple = ("liter","of","cola")
