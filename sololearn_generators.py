@@ -13,21 +13,21 @@ def evens():
 for a in evens():
     print a
 
-def printfirst():
-    li = [(1,3),(5,9),(6,2),(1,5)]
+def printfirst(li):
     i = 0
     while i < len(li):
         yield li[i][0]
         i += 1
 
-pf = printfirst()
-pf2 = printfirst()
+l = [(1,3),(5,9),(6,2),(1,5)]
+pf = printfirst(l)
+pf2 = printfirst(l)
 print(next(pf))
 print(next(pf))
 print(next(pf))
 print(next(pf))
 # or call with a for loop
-for p in printfirst():
+for p in printfirst(l):
     print p
     
 # Generators can be created on the fly with generator expressions
@@ -36,7 +36,12 @@ lc = [x**3 for x in range(1,5)]
 ge = (x**3 for x in range(1,5))
 print lc
 print ge
-print(next(ge))   
-print(next(ge))   
-print(next(ge))   
-print(next(ge))   
+
+for item in lc:
+    print item
+
+for item in ge:
+    print item
+
+# You can loop through them the same but generators will only take up as much 
+# memory as far as you go,  The list will store the whole thing either way
