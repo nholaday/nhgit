@@ -30,9 +30,24 @@ navigation = {
     "Insert line below current line and edit": "o",
     "Visual Block Mode": "ctl-v",
     "Goto line 77": "77G",
+    "First non-blank character of the line": "^",
+}
+
+vim2 = {
     "Jump to matching (, [, \"": "%",
     "Substitute 'old' with 'new', globally with confirm": ":%s/old/new/gc",
     "Run ls command": ":!ls",
+    "Go to next instance of currently selected word": "*",
+    "Delete until the next 'r' character": "dtr",
+    "Move to next 'i' character": "fi",
+    "Delete until the previous 'q' character": "dTq",
+    "Move to previous 'h' character": "Fh",
+    "Move to next match from F command": ";", 
+    "Change text around ()": "ca)",
+    "Split the window vertically": ":vs",
+    "Split windows horizontally": ":sp",
+    "Focus on current split": ":only",
+    "Yank line to system clipboard": "*yy",
 }
 
 terminal1 = {
