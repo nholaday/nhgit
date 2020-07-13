@@ -42,12 +42,21 @@ vim2 = {
     "Move to next 'i' character": "fi",
     "Delete until the previous 'q' character": "dTq",
     "Move to previous 'h' character": "Fh",
-    "Move to next match from F command": ";", 
+    "Move to next match from f command": ";", 
     "Change text around ()": "ca)",
     "Split the window vertically": ":vs",
     "Split windows horizontally": ":sp",
-    "Focus on current split": ":only",
-    "Yank line to system clipboard": "*yy",
+    "Move to window below":  "ctl-wj",
+    "Yank line to system clipboard": "\"*yy",
+    "Paste the most recently yanked (not deleted) text": "\"0p",
+    "Yank line to register a": "\"ayy",
+    "Paste line from register a": "\"ap",
+    "Paste from clipboard register": "\"*p",
+    "Detach from vim session": "ctl-z",
+    "Reattach to a vim session from the shell": "fg",
+    "Open file hi.txt for editing": ":e hi.txt",
+    "Previous buffer": "ctl-o",
+    "Next buffer": "ctl-i",
 }
 
 terminal1 = {
@@ -148,6 +157,7 @@ tmux = {
 
 contents = {
     'navigation': navigation, 
+    'vim2': vim2,
     'terminal1': terminal1,
     'terminal2': terminal2,
     'terminal3': terminal3,
