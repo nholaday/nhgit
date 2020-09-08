@@ -18,9 +18,16 @@ class Post(models.Model):
     
     def approve_comments(self):
         return self.comments.filter(approved_comment=True)
+        
+    # After a user makes a Post, where should the website take them?
+    # function must be named exactly get_absolute_url(self) for django
+    def get_absolute_url(self):
+        # Go to the post_detail page with the primary key of the post you just created
+        return reverse("post_detail",kwargs={'pk':self.pk})
 
     def __str__(self):
         return self.title
+    
 
 class Comment(models.Model):
     post = models.ForeignKey('blog.Post',related_name='comments')
@@ -28,3 +35,14 @@ class Comment(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now())
     approved_comment = models.BooleanField(default=False)
+    
+    def approve(self):
+        self.approved_comment = True
+        self.save()
+    
+    def get_absolute_url(self):
+        # Go to list of all posts
+        return reverse("post_list")
+
+    def __str__(self):
+        return self.text

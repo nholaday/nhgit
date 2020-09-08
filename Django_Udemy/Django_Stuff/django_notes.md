@@ -154,6 +154,13 @@ class NewForm(forms.ModelForm):
         #or# exclude = ["field1", "field2"]
 Then in views.py just use modelinstance.save() to save the form data
 *How do you make imported ModelForms look nice?*
+To modify singular fields/widgets ModelForms, configure the widgets variable under the Meta class
+        widgets = {
+            # this class referring to a css class to apply to the widget
+            'field1':TextInput(attrs={'class':'textinputclass'}),
+            # can apply multiple classes separated by spaces
+            'field2':Textarea(attrs={'class':'class1 class2'})
+        }
 
 11. Passwords
 11a. Add 2 apps to INSTALLED_APPS list in settings.py
@@ -233,8 +240,25 @@ def user_view():
         <label for="username">Username</label>
         <input type="text" name="username" placeholder="Enter Username">
 - In urls.py, add urls
+
+14. Mixins
+In views.py, for class based views, instead of a decorator @login_required use a Mixin
+from django.contrib.auth.mixins import LoginRequiredMixin
+
  
 
+# General project building cycle:
+MTV Model Template View Architecture:
+
+Each page the user visits will be listed in urls.py
+That url will link to a View in views.py
+That view gets/posts data to a model in models.py
+That view gets its html from templates
+
+Another process could look like:
+Create a Model, Model Forms if necessary
+Create Views for each model
+For every View connect a URL in urls.py
 
 # Changing Models and Migrations
 - Change your models (in models.py).
